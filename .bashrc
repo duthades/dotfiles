@@ -116,5 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Working with a bare repo 
+# Alias to quickly commit the changes in dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
