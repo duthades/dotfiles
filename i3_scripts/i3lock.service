@@ -1,0 +1,12 @@
+[Unit]
+Description=Lock screen before suspend
+Before=sleep.target
+
+[Service]
+User=sanket
+Type=forking
+Environment=DISPLAY=:0
+ExecStart=/home/sanket/i3_scripts/i3lock.sh
+
+[Install]
+WantedBy=sleep.target
