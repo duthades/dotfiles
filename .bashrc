@@ -116,6 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export LC_ALL=en_US.UTF-8
+
 # Working with a bare repo 
 # Alias to quickly commit the changes in dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
